@@ -1,0 +1,14 @@
+author: tilkai
+spring:
+  application:
+    name: msa-weather-config-client
+  cloud:
+    config:
+      profile: dev
+      uri: 127.0.0.1:8888
+eureka:
+  client:
+    service-url:
+      default-zone: http://127.0.0.1:8761/eureka/
+server:
+  port: 8888
